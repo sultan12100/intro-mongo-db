@@ -10,8 +10,8 @@ describe('Project model', () => {
     try {
       await Project.init()
       await Project.create([
-        {org, name},
-        {org, name}
+        { org, name },
+        { org, name },
       ])
     } catch (e) {
       expect(e).toBeTruthy()
@@ -22,7 +22,7 @@ describe('Project model', () => {
       name: 'p1',
       org: mongoose.Types.ObjectId(),
       budget: 4000,
-      spent: 1000
+      spent: 1000,
     })
 
     expect(project.budgetLeft).toBe(3000)

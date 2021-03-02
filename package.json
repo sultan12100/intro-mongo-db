@@ -5,7 +5,7 @@
   "author": "Scott Moss <willscottmoss@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "jest"
+    "test": "jest --verbose=false"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
